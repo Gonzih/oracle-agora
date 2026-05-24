@@ -1,0 +1,33 @@
+{
+  "name": "oracle-agora",
+  "version": "1.0.0",
+  "description": "Prediction market intelligence agent — narrative-to-reality arbitrage on Polymarket via Circle/Arc",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "demo": "node dist/index.js --once"
+  },
+  "keywords": ["prediction-markets", "polymarket", "circle", "arc", "defi", "smart-money"],
+  "author": "Maksim Soltan",
+  "license": "MIT",
+  "dependencies": {
+    "@gonzih/poly-scout": "0.1.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "axios": "1.16.1",
+    "node-cron": "4.2.1",
+    "uuid": "11.1.1",
+    "zod": "3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "@types/node-cron": "3.0.11",
+    "ts-node": "10.9.2",
+    "@types/uuid": "10.0.0",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
